@@ -58,20 +58,6 @@ app.post("/alunos",(req,res)=>{
     if(!nome || !cor || !idade){
         return res.status(400).json({msg:"Nome cor e idade sao obrigatorios"})
     }
-   
-   // ALUNOS.length = 3
-   /// ALUNOS[2]
-
-   // ALUNOS.length - 1
-   //ALUNOS[2].id = 3
-   // ALUNOS[2].id = 1
-
-   //let id = 0
-   //if(ALUNOS.length >0){
-   //     id = ALUNOS[ALUNOS.length - 1].id + 1
-   // }else{
-   //     id = 1
-   // }
 
     const id = ALUNOS.length > 0 ? ALUNOS[ALUNOS.length - 1].id + 1 :1
 
